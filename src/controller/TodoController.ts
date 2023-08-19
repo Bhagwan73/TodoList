@@ -50,8 +50,7 @@ const getTodos=async  (req:Request, res:Response) =>{
       const order=req.query.order === "ascending" ? 'ASC' : 'DESC';
     
     // filter tasks based on status.
-      const filter=(req.query.status || null) 
-      ? {status:req.query.status==='completed'} : {}
+      const filter=req.query.status ? {status:true} :{}
 
      let tasks= await todoRepository.find({
         take: limit,
