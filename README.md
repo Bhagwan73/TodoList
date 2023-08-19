@@ -163,7 +163,7 @@ Delete a Todo item.
 ```
 {
     "status": true,
-    "messgae": "Todo item deleted successfully."
+    "message": "Todo item deleted successfully."
 }
 ```
 ### POST /register
